@@ -24,7 +24,7 @@ import streamlit as st
 # Config
 
 st.set_page_config(
-    page_title="BTC Price Prediction Dashboard",
+    page_title="Bitcoin Price Forecasting Dashboard",
     page_icon="₿",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -95,7 +95,7 @@ def load_feature_cols():
 
 # Sidebar — global controls
 
-st.sidebar.title("₿ BTC Predictor")
+st.sidebar.title("₿ Bitcoin Price Forecastin")
 st.sidebar.caption("Bitcoin price forecast — ML + sentiment Twitter")
 
 page = st.sidebar.radio(
@@ -132,7 +132,7 @@ st.sidebar.caption("Built with Streamlit · Data: CoinGecko + HuggingFace")
 def page_overview():
     st.title("₿ BTC Price Prediction Dashboard")
     st.markdown(
-    "Memprediksi harga **Bitcoin** menggunakan tiga skenario data: "
+    "Menganalisis forecasting harga **Bitcoin** menggunakan tiga skenario data: "
     "**Historical**, **Sentiment**, dan **Historical + Sentiment** "
     "dengan model **Linear Regression**, **Random Forest**, dan **LSTM** "
     "untuk horizon **t+1 hari** dan **t+30 hari**."
