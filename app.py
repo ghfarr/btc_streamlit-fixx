@@ -566,14 +566,13 @@ def page_predictions():
     )
 
 # Page: Metrics
-
 def page_metrics():
 
-    st.title("Metrics & Model Comparison")
+    st.title("📈 Metrics & Model Comparison")
 
     metrics = load_metrics()
 
-   scenario = st.selectbox(
+    scenario = st.selectbox(
         "Scenario",
         ["Historical", "Sentiment", "Combined"]
     )
@@ -689,6 +688,7 @@ def page_metrics():
         use_container_width=True,
         hide_index=True
     )
+    
 # Page: Scenario Comparison
 def page_scenario_comparison():
 
