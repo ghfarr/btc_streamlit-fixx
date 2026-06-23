@@ -573,12 +573,14 @@ def page_metrics():
 
     metrics = load_metrics()
 
-    scenarios_pick = st.multiselect(
-    "Skenario",
-    ["Historical", "Sentiment", "Combined"],
-    default=["Historical", "Sentiment", "Combined"]
-)
-metrics = metrics[metrics["scenario"].isin(scenarios_pick)]
+   scenario = st.selectbox(
+        "Scenario",
+        ["Historical", "Sentiment", "Combined"]
+    )
+
+    metrics = metrics[
+        metrics["scenario"] == scenario
+    ]
 
     st.subheader("Tabel Lengkap (RMSE / MAE / MAPE)")
 
