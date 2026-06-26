@@ -871,7 +871,7 @@ Berdasarkan hasil pengujian pada tiga skenario data, yaitu Historical, Sentiment
 
 2. Data sentimen saja belum mampu menghasilkan prediksi harga Bitcoin yang akurat. Hal ini ditunjukkan oleh nilai RMSE, MAE, dan MAPE yang jauh lebih tinggi dibandingkan skenario lainnya.
 
-3. Kombinasi data historis dan sentimen memberikan performa yang kompetitif, namun peningkatannya tidak selalu signifikan dibandingkan penggunaan data historis saja.
+3. Kombinasi data historis dan sentimen belum mampu memberikan peningkatan performa yang signifikan dibandingkan penggunaan data historis saja.
 
 4. Linear Regression menjadi model dengan performa terbaik pada sebagian besar skenario dan horizon prediksi berdasarkan nilai RMSE terendah pada data pengujian.
 
